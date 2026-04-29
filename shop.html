@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop · Beej</title>
+  <meta name="description" content="The Beej Starter Kit. Two boxer-briefs, three cooling wedges, a hygiene pouch and booklet. Made in India." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark">Beej</span>
+        <span class="brand__deva">बीज</span>
+      </a>
+      <nav class="nav">
+        <button class="menu-toggle">Menu</button>
+        <div class="nav__links" style="display: flex; gap: 2.2rem;">
+          <a href="shop.html">Shop</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="science.html">The science</a>
+          <a href="blog.html">Journal</a>
+          <a href="about.html">About</a>
+        </div>
+        <a href="shop.html" class="cart-link">Cart (0)</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="product">
+
+        <!-- ===== Media ===== -->
+        <div class="product__media">
+          <div class="product__hero-img">
+            <img src="images/hero-product.webp" alt="Beej cooling underwear" data-hero-img />
+          </div>
+          <div class="product__thumbs">
+            <button data-thumb="images/hero-product.webp" class="is-active">
+              <img src="images/hero-product.webp" alt="" />
+            </button>
+            <button data-thumb="images/insert-action.webp">
+              <img src="images/insert-action.webp" alt="" />
+            </button>
+            <button data-thumb="images/wedge-detail.webp">
+              <img src="images/wedge-detail.webp" alt="" />
+            </button>
+            <button data-thumb="images/unboxing.jpg">
+              <img src="images/unboxing.jpg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <!-- ===== Info ===== -->
+        <div class="product__info">
+          <span class="eyebrow">The Beej Starter Kit</span>
+          <h1 class="mt-2">Cooling underwear, <em class="italic" style="color: var(--accent-deep);">designed for daily comfort.</em></h1>
+
+          <div class="product__rating">
+            <span class="stars">★★★★★</span>
+            <span>4.8 from 162 reviews</span>
+          </div>
+
+          <div class="product__price">
+            <span class="now" data-price-now>₹1,799</span>
+            <span class="was" data-price-was>₹2,199</span>
+            <span class="save" data-price-save>Save ₹400</span>
+          </div>
+          <p class="product__tax">Inclusive of all taxes · Free shipping across India</p>
+
+          <!-- Variant -->
+          <div data-variant-group class="product__variants">
+            <button class="variant is-selected"
+                    data-price-now="₹1,799" data-price-was="₹2,199" data-price-save="Save ₹400">
+              <strong>Starter Kit</strong>
+              <span>2 underwear · 3 wedges · pouch · booklet</span>
+            </button>
+            <button class="variant"
+                    data-price-now="₹2,999" data-price-was="₹3,799" data-price-save="Save ₹800">
+              <strong>Couple's Kit</strong>
+              <span>4 underwear · 5 wedges · pouch · booklet</span>
+            </button>
+          </div>
+
+          <!-- Size -->
+          <div class="product__sizes">
+            <div class="product__sizes-label">
+              <span><strong>Size</strong></span>
+              <span><a href="#size-guide" style="border-bottom: 1px solid var(--ink);">Size guide</a></span>
+            </div>
+            <div class="product__sizes-grid" data-size-group>
+              <button class="size">S</button>
+              <button class="size is-selected">M</button>
+              <button class="size">L</button>
+              <button class="size">XL</button>
+              <button class="size is-out">XXL</button>
+            </div>
+          </div>
+
+          <!-- ATC -->
+          <div class="add-to-cart-row">
+            <div class="qty">
+              <button data-qty="-" aria-label="Decrease">−</button>
+              <input type="number" value="1" min="1" max="99" />
+              <button data-qty="+" aria-label="Increase">+</button>
+            </div>
+            <button class="btn" data-add-to-cart>Add to cart <span class="arrow">→</span></button>
+          </div>
+
+          <div class="product__perks">
+            <span>Free shipping over ₹999</span>
+            <span>30-day comfort guarantee</span>
+            <span>Ships within 48 hours</span>
+          </div>
+
+          <!-- Tabs -->
+          <div class="tabs" data-tabs>
+            <div class="tabs__head">
+              <button data-tab="desc" class="is-active">Description</button>
+              <button data-tab="inside">What's inside</button>
+              <button data-tab="use">How to use</button>
+              <button data-tab="care">Care</button>
+            </div>
+
+            <div class="tab-panel is-active" data-panel="desc">
+              <p>Beej is a cooling underwear system designed for everyday comfort. The boxer-brief is cut from a soft modal-cotton blend that breathes well in Indian heat. A discreet front pocket holds a reusable cooling wedge that stays at a pleasant 14–18°C for around half an hour.</p>
+              <p class="mt-3">It's built for men who sit a lot, ride two-wheelers, work in heat, train hard, or are recovering from a procedure. It is not a medical device. It is a comfort and recovery aid.</p>
+            </div>
+
+            <div class="tab-panel" data-panel="inside">
+              <p>Each Starter Kit ships with:</p>
+              <ul>
+                <li>2 × Beej cooling boxer-briefs (modal-cotton blend, mid-rise)</li>
+                <li>3 × cooling wedges (phase-change material, ~16°C target)</li>
+                <li>1 × hygiene freezer pouch (BPA-free silicone)</li>
+                <li>1 × printed booklet — <em>A guide to staying cool</em></li>
+                <li>Recyclable, plastic-free packaging</li>
+              </ul>
+            </div>
+
+            <div class="tab-panel" data-panel="use">
+              <p>Place a wedge inside the hygiene pouch and put it in your fridge or freezer. After about an hour it's ready to use.</p>
+              <p class="mt-3">Slide the wedge into the front pocket of your Beej and wear normally. Most men find one or two thirty-minute sessions a day works well — at the desk, after a workout, on the commute home.</p>
+              <p class="mt-3">After use, return the wedge to the hygiene pouch and back to the fridge. Each wedge is good for hundreds of cycles.</p>
+            </div>
+
+            <div class="tab-panel" data-panel="care">
+              <p>Machine wash cold on a gentle cycle, with the wedge removed. Air dry; do not tumble. Do not bleach. Do not iron the front pocket area.</p>
+              <p class="mt-3">Wedges can be wiped clean with a damp cloth. Replace if any sign of leakage appears (none expected for at least 12–18 months of regular use).</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why this is different -->
+  <section class="section divider">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Why Beej</span>
+          <h2 class="section-head__title mt-2">Five details we sweated.</h2>
+        </div>
+        <p class="section-head__lede lede">It's a simple-looking object. The work is in the things you don't see. Here's what makes Beej different from a frozen pea bag, a generic ice pack, or the cheaper cooling boxers on Amazon.</p>
+      </div>
+
+      <div class="three-col">
+        <div class="three-col__item reveal">
+          <span class="num">01</span>
+          <h3>Phase-change wedge.</h3>
+          <p>Holds at ~16°C, not 0°C. That's why it doesn't hurt, doesn't go numb, and lasts the full half hour without you noticing.</p>
+        </div>
+        <div class="three-col__item reveal">
+          <span class="num">02</span>
+          <h3>Modal-cotton, not polyester.</h3>
+          <p>"Moisture-wicking" polyester is a common shortcut and it's the wrong fabric for the job. Modal breathes better and runs cooler. Cotton stays cotton.</p>
+        </div>
+        <div class="three-col__item reveal">
+          <span class="num">03</span>
+          <h3>Hygiene pouch included.</h3>
+          <p>Your wedges live in a sealed silicone pouch in the fridge. They never touch food or shelves. A small detail that nobody else does.</p>
+        </div>
+        <div class="three-col__item reveal">
+          <span class="num">04</span>
+          <h3>Anatomy-shaped.</h3>
+          <p>The wedge is moulded to nest, not a flat brick that rides up. It cools more surface and stays where it should.</p>
+        </div>
+        <div class="three-col__item reveal">
+          <span class="num">05</span>
+          <h3>Vapor barrier.</h3>
+          <p>A thin internal film prevents condensation in humid weather. Your underwear stays dry. Worth the engineering.</p>
+        </div>
+        <div class="three-col__item reveal">
+          <span class="num">06</span>
+          <h3>Printed booklet.</h3>
+          <p>An actual booklet ships with each kit. Lifestyle notes, care, and quiet reading on the body. Made in India.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="section" style="background: var(--paper); border-top: 1px solid var(--line);">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">A quick comparison</span>
+        <h2 class="mt-2">Beej vs the alternatives.</h2>
+      </div>
+      <div style="overflow-x: auto; margin-top: 3rem;" class="reveal">
+        <table style="width: 100%; border-collapse: collapse; min-width: 640px;">
+          <thead>
+            <tr style="border-bottom: 1px solid var(--line);">
+              <th style="text-align: left; padding: 1rem; font-weight: 500; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-mute);"></th>
+              <th style="text-align: left; padding: 1rem; font-family: var(--serif); font-size: 1.15rem; font-weight: 400;">Beej</th>
+              <th style="text-align: left; padding: 1rem; font-size: 0.92rem; color: var(--ink-mute);">Generic ice pack</th>
+              <th style="text-align: left; padding: 1rem; font-size: 0.92rem; color: var(--ink-mute);">A bag of frozen peas</th>
+            </tr>
+          </thead>
+          <tbody style="font-size: 0.95rem;">
+            <tr style="border-bottom: 1px solid var(--line-soft);">
+              <td style="padding: 1rem; color: var(--ink-mute);">Holds steady at 14–18°C</td>
+              <td style="padding: 1rem;">Yes</td>
+              <td style="padding: 1rem; color: var(--ink-mute);">No — 0°C, painful</td>
+              <td style="padding: 1rem; color: var(--ink-mute);">No — −18°C, very painful</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--line-soft);">
+              <td style="padding: 1rem; color: var(--ink-mute);">Anatomy-shaped</td>
+              <td style="padding: 1rem;">Yes</td>
+              <td style="padding: 1rem; color: var(--ink-mute);">No</td>
+              <td style="padding: 1rem; color: var(--ink-mute);">Hardly</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--line-soft);">
+              <td style="padding: 1rem; color: var(--ink-mute);">Wearable, hands-free</td>
+              <td style="padding: 1rem;">Yes</td>
+              <td style="padding: 1rem; color: var(--ink-mute);">No</td>
+              <td style="padding: 1rem; color: var(--ink-mute);">No</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--line-soft);">
+              <td style="padding: 1rem; color: var(--ink-mute);">No condensation</td>
+              <td style="padding: 1rem;">Yes</td>
+              <td style="padding: 1rem; color: var(--ink-mute);">No</td>
+              <td style="padding: 1rem; color: var(--ink-mute);">No</td>
+            </tr>
+            <tr>
+              <td style="padding: 1rem; color: var(--ink-mute);">Reusable for 12+ months</td>
+              <td style="padding: 1rem;">Yes</td>
+              <td style="padding: 1rem; color: var(--ink-mute);">Sometimes</td>
+              <td style="padding: 1rem; color: var(--ink-mute);">Until dinner</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">From the people wearing it</span>
+          <h2 class="section-head__title mt-2">A few words from early customers.</h2>
+        </div>
+        <p class="section-head__lede lede">Verified reviews from men who bought a Beej kit. We don't write these and we don't edit them. We just listen.</p>
+      </div>
+
+      <div class="three-col">
+        <div class="three-col__item reveal">
+          <span class="num">★★★★★</span>
+          <h3 class="serif" style="font-size: 1.15rem; line-height: 1.4;">"Sceptical at first, sold now."</h3>
+          <p>I ride a Bullet to and from work. The wedge is the first thing I do when I get home. Quiet, neat, doesn't look like a gadget.</p>
+          <p class="small mt-2">— Aryan, Pune</p>
+        </div>
+        <div class="three-col__item reveal">
+          <span class="num">★★★★★</span>
+          <h3 class="serif" style="font-size: 1.15rem; line-height: 1.4;">"My urologist actually approved."</h3>
+          <p>Recovered from a vasectomy with these. Far more comfortable than what the clinic suggested. The booklet was a nice touch.</p>
+          <p class="small mt-2">— Vikram, Bengaluru</p>
+        </div>
+        <div class="three-col__item reveal">
+          <span class="num">★★★★★</span>
+          <h3 class="serif" style="font-size: 1.15rem; line-height: 1.4;">"Sit at a desk all day."</h3>
+          <p>Twelve hours in a chair, Delhi summer. The wedge is the part of my day I look forward to. Worth every rupee.</p>
+          <p class="small mt-2">— Rohan, Gurgaon</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="disclaimer">
+    <p>Beej is a comfort and recovery aid. It is not a medical device and does not treat, cure, or prevent any condition. If you have a specific health concern, please consult a doctor.</p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="site-footer__grid">
+        <div>
+          <div class="site-footer__brand">Beej · बीज</div>
+          <p class="site-footer__tagline">A cooling underwear system, made in India for the Indian climate.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">Starter Kit</a></li>
+            <li><a href="shop.html">Couple's Kit</a></li>
+            <li><a href="shop.html">Refill Pack</a></li>
+            <li><a href="shop.html">Single Underwear</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Read</h4>
+          <ul>
+            <li><a href="how-it-works.html">How it works</a></li>
+            <li><a href="science.html">The science</a></li>
+            <li><a href="blog.html">Journal</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mailto:hello@beej.in">Contact</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Affiliates</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__base">
+        <span>© 2026 Beej. All rights reserved.</span>
+        <div class="site-footer__legal">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Returns</a>
+          <a href="#">Shipping</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
